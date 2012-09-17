@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PancakeURLProtocol.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <PancakeCallHandler>
+
+- (IBAction) pop;
+- (IBAction) reload;
 
 @end

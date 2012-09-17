@@ -21,6 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSDictionary* defaults = [NSDictionary dictionaryWithObject: @"https://moo.mx/stuff/frenchtoast/ios.html" forKey: @"URL"];
+    [[NSUserDefaults standardUserDefaults] registerDefaults: defaults];
+
+
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];

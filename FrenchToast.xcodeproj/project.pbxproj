@@ -18,6 +18,8 @@
 		F834F6B6160763F600BA8F43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F834F6B5160763F600BA8F43 /* Default-568h@2x.png */; };
 		F834F6B9160763F600BA8F43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F834F6B8160763F600BA8F43 /* ViewController.m */; };
 		F834F6BC160763F600BA8F43 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F834F6BA160763F600BA8F43 /* ViewController.xib */; };
+		F834F6C31607659E00BA8F43 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F834F6C21607659E00BA8F43 /* Settings.bundle */; };
+		F834F6D11607A2AB00BA8F43 /* PancakeURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F834F6D01607A2AB00BA8F43 /* PancakeURLProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		F834F6B7160763F600BA8F43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F834F6B8160763F600BA8F43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F834F6BB160763F600BA8F43 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F834F6C21607659E00BA8F43 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F834F6CF1607A2AB00BA8F43 /* PancakeURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PancakeURLProtocol.h; sourceTree = "<group>"; };
+		F834F6D01607A2AB00BA8F43 /* PancakeURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PancakeURLProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,8 @@
 		F834F6A5160763F600BA8F43 /* FrenchToast */ = {
 			isa = PBXGroup;
 			children = (
+				F834F6CF1607A2AB00BA8F43 /* PancakeURLProtocol.h */,
+				F834F6D01607A2AB00BA8F43 /* PancakeURLProtocol.m */,
 				F834F6AE160763F600BA8F43 /* AppDelegate.h */,
 				F834F6AF160763F600BA8F43 /* AppDelegate.m */,
 				F834F6B7160763F600BA8F43 /* ViewController.h */,
@@ -103,6 +110,7 @@
 				F834F6B1160763F600BA8F43 /* Default.png */,
 				F834F6B3160763F600BA8F43 /* Default@2x.png */,
 				F834F6B5160763F600BA8F43 /* Default-568h@2x.png */,
+				F834F6C21607659E00BA8F43 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				F834F6B4160763F600BA8F43 /* Default@2x.png in Resources */,
 				F834F6B6160763F600BA8F43 /* Default-568h@2x.png in Resources */,
 				F834F6BC160763F600BA8F43 /* ViewController.xib in Resources */,
+				F834F6C31607659E00BA8F43 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				F834F6AC160763F600BA8F43 /* main.m in Sources */,
 				F834F6B0160763F600BA8F43 /* AppDelegate.m in Sources */,
 				F834F6B9160763F600BA8F43 /* ViewController.m in Sources */,
+				F834F6D11607A2AB00BA8F43 /* PancakeURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +232,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -242,7 +252,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -291,6 +301,7 @@
 				F834F6C1160763F600BA8F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

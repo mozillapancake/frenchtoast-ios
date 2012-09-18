@@ -20,6 +20,7 @@
 - (void) load;
 - (void) stop;
 - (void) reload;
+- (UIWebView*) webView;
 - (UIView*) view;
 
 @end
@@ -63,6 +64,11 @@
 - (void) reload
 {
     [webView_ reload];
+}
+
+- (UIWebView*) webView
+{
+    return webView_;
 }
 
 - (UIView*) view
@@ -129,17 +135,25 @@
 
 - (void) popView
 {
-    Viewer* viewer = [viewers lastObject];
-    if (viewer != nil)
+    if ([viewers count] > 1)
     {
-        [viewer stop];
+        Viewer* topViewer = [viewers lastObject];
+        [topViewer stop];
         [viewers removeLastObject];
-    }
-}
+        
+        // Send out an event to the first layer that something has new focus
+        
+        topViewer = [viewers lastObject];
+        
+        Viewer* mainViewer = [viewers objectAtIndex: 0];
+        
+        NSString* url = [[topViewer webView] stringByEvaluatingJavaScriptFromString: @"window.location.href"];
+        NSData* json = [NSJSONSerialization dataWithJSONObject: url options: NSJSONReadingAllowFragments error: NULL];
+        NSString* jsonString = [[[NSString alloc] initWithData: json encoding:NSUTF8StringEncoding] autorelease];
 
-- (Viewer*) peekView
-{
-    return [viewers lastObject];
+        NSString* code = [NSString stringWithFormat: @"FrenchToast.dispatchLayerFocusEvent(%@)", jsonString];
+        [[mainViewer webView] stringByEvaluatingJavaScriptFromString: code];
+    }
 }
 
 #pragma mark -
@@ -151,7 +165,7 @@
 
 - (IBAction) reload
 {
-    Viewer* viewer = [self peekView];
+    Viewer* viewer = [viewers lastObject];
     if (viewer != nil) {
         [viewer reload];
     }

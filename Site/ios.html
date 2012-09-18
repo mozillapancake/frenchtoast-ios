@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<script src="ios.js"> type="text/javascript"</script>
+</head>
+
+<body>
+
+<h1>French Toast</h1>
+
+<p><a href="javascript:FrenchToast.openAppView('https://moo.mx/stuff/frenchtoast/search.html')">Open an app viewer</a></p>
+
+<p><a href="javascript:FrenchToast.openWebView('http://news.ycombinator.com')">Open a web viewer</a></p>
+
+</body>
+
+<script type="text/javascript">
+var layerFocusHandler = function(url) {
+  alert(url);
+};
+FrenchToast.registerLayerFocusHandler(layerFocusHandler);
+</script>
+
+</html>

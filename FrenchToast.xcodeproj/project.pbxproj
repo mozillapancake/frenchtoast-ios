@@ -225,6 +225,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E4864322160B87690013A4E5 /* Enterprise */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Enterprise;
+		};
+		E4864323160B87690013A4E5 /* Enterprise */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrenchToast/FrenchToast-Prefix.pch";
+				INFOPLIST_FILE = "FrenchToast/FrenchToast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Enterprise;
+		};
 		F834F6BD160763F600BA8F43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +343,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F834F6BD160763F600BA8F43 /* Debug */,
+				E4864322160B87690013A4E5 /* Enterprise */,
 				F834F6BE160763F600BA8F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -312,6 +353,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F834F6C0160763F600BA8F43 /* Debug */,
+				E4864323160B87690013A4E5 /* Enterprise */,
 				F834F6C1160763F600BA8F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

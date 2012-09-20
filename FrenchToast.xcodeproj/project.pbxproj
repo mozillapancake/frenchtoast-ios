@@ -20,6 +20,9 @@
 		F834F6BC160763F600BA8F43 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F834F6BA160763F600BA8F43 /* ViewController.xib */; };
 		F834F6C31607659E00BA8F43 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F834F6C21607659E00BA8F43 /* Settings.bundle */; };
 		F834F6D11607A2AB00BA8F43 /* PancakeURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F834F6D01607A2AB00BA8F43 /* PancakeURLProtocol.m */; };
+		F8596003160B6468003578B8 /* Scrubber.png in Resources */ = {isa = PBXBuildFile; fileRef = F8596002160B6468003578B8 /* Scrubber.png */; };
+		F8596008160B730C003578B8 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8596006160B730C003578B8 /* WebViewController.m */; };
+		F8596009160B730C003578B8 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8596007160B730C003578B8 /* WebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,10 @@
 		F834F6C21607659E00BA8F43 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F834F6CF1607A2AB00BA8F43 /* PancakeURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PancakeURLProtocol.h; sourceTree = "<group>"; };
 		F834F6D01607A2AB00BA8F43 /* PancakeURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PancakeURLProtocol.m; sourceTree = "<group>"; };
+		F8596002160B6468003578B8 /* Scrubber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scrubber.png; sourceTree = "<group>"; };
+		F8596005160B730C003578B8 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		F8596006160B730C003578B8 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		F8596007160B730C003578B8 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +103,9 @@
 				F834F6B8160763F600BA8F43 /* ViewController.m */,
 				F834F6BA160763F600BA8F43 /* ViewController.xib */,
 				F834F6A6160763F600BA8F43 /* Supporting Files */,
+				F8596005160B730C003578B8 /* WebViewController.h */,
+				F8596006160B730C003578B8 /* WebViewController.m */,
+				F8596007160B730C003578B8 /* WebViewController.xib */,
 			);
 			path = FrenchToast;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 				F834F6B1160763F600BA8F43 /* Default.png */,
 				F834F6B3160763F600BA8F43 /* Default@2x.png */,
 				F834F6B5160763F600BA8F43 /* Default-568h@2x.png */,
+				F8596002160B6468003578B8 /* Scrubber.png */,
 				F834F6C21607659E00BA8F43 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
@@ -172,6 +183,8 @@
 				F834F6B6160763F600BA8F43 /* Default-568h@2x.png in Resources */,
 				F834F6BC160763F600BA8F43 /* ViewController.xib in Resources */,
 				F834F6C31607659E00BA8F43 /* Settings.bundle in Resources */,
+				F8596003160B6468003578B8 /* Scrubber.png in Resources */,
+				F8596009160B730C003578B8 /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +199,7 @@
 				F834F6B0160763F600BA8F43 /* AppDelegate.m in Sources */,
 				F834F6B9160763F600BA8F43 /* ViewController.m in Sources */,
 				F834F6D11607A2AB00BA8F43 /* PancakeURLProtocol.m in Sources */,
+				F8596008160B730C003578B8 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

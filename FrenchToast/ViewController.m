@@ -321,7 +321,7 @@
     }
     
     else {
-        NSLog(@"Unknown call %@", name);
+        NSLog(@"Unknown call %@: %@", name, arguments);
     }
     
     return nil;

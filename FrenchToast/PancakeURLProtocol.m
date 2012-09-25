@@ -252,7 +252,7 @@ static NSMutableSet* sAppViews = nil;
         // Call the webView
         
         NSString* callString = [[[NSString alloc] initWithData: callData encoding: NSUTF8StringEncoding] autorelease];
-        NSString* javaScript = [NSString stringWithFormat: @"MessageThing.handleCall(%@)", callString];
+        NSString* javaScript = [NSString stringWithFormat: @"FrenchToast.handleCall(%@)", callString];
                     
         Evaluator* evaluator = [[[Evaluator alloc] initWithWebView: webView javaScript: javaScript] autorelease];
         [evaluator performSelectorOnMainThread: @selector(evaluate) withObject: nil waitUntilDone: YES];
